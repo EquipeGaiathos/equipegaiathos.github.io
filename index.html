@@ -1,0 +1,184 @@
+	<!doctype html>
+<html>
+<head>
+  <title>Cosmo Cards</title>
+
+  <script type="text/javascript" src="vis.js"></script>
+  <link href="vis-network.min.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+	@font-face{
+		font-family: Diogenes;
+		src: url(font/DIOGENES.tff) ;
+		
+	}
+  html{
+  	font-family: Diogenes;
+  	color: white;
+  }
+  
+    #mynetwork {
+      margin: 0 auto;
+      width: 90vw;
+      height: 90vh;
+      border: 1px solid lightgray;
+    }
+	
+	body{
+	  background: url("bonito.png")  fixed center;	
+	  /*background-size: 100% auto; */
+	
+	}
+  </style>
+</head>
+<body>
+</br>
+
+<div id="mynetwork"></div>
+
+<script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+    {id: 1, label: 'Caos', shape: 'image', size: 80, font:{size: 30, color:'white', face: 'Diogenes'}, 
+	image:{ unselected:'img/chaos.svg', selected: 'deusgrego.png'}, },
+	{id: 2, label: 'Tártaro', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/tártaro.svg', selected: 'deusgrego.png'}      },
+	{id: 3, label: 'Eros', shape: 'image',size: 60,font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/heros.svg', selected: 'deusgrego.png'}  	},
+	{id: 4, label: 'Gaia', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/gaia.svg', selected: 'gaia.png'}  },
+	{id: 5, label: 'Nix', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/nix.svg', selected: 'nix.png'}  },
+	{id: 6, label: 'Érebo', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/érebo.svg', selected: 'erebo.png'}  },
+	{id: 7, label: 'União 1',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20},
+	{id: 8, label: 'Emera', shape: 'image',size: 40, font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/hemera.svg', selected: 'deusgrego.png'}  },
+	{id: 9, label: 'Éter', shape: 'image', size: 40,font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/eter.svg', selected: 'deusgrego.png'}  },
+	{id: 10, label: 'Pontos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 40  },
+	{id: 11, label: 'Orea', shape: 'image',size: 40,font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/orea.svg', selected: 'deusgrego.png'}  },
+	{id: 12, label: 'Uranos', shape: 'image',size: 40, font:{size: 30, color:'white', face: 'Diogenes'},
+	image:{ unselected:'img/urano.svg', selected: 'deusgrego.png'}  },
+	{id: 13, label: 'Afrodite',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30  },
+	{id: 14, label: 'União 2', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20},
+	{id: 15, label: 'Mnemosine',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 16, label: 'Hiperion',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 17, label: 'Teia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 18, label: 'Crio',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 19, label: 'Febe',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 20, label: 'Ceos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 21, label: 'Temis',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 22, label: 'Jápeto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 23, label: 'Tetis',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 24, label: 'Oceanos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 25, label: 'Reia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 26, label: 'Cronos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 27, label: 'União 3',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20 },
+	{id: 28, label: 'Atlas',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 29, label: 'União 4', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20},
+	{id: 30, label: 'Pleone',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 31, label: 'União 5', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20},
+	{id: 32, label: 'Leto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 33, label: 'Maia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 34, label: 'União 6', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20},
+	{id: 35, label: 'Hestia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 36, label: 'Demeter',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 37, label: 'Hera',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 38, label: 'Zeus',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 39, label: 'Poseidon',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 40, label: 'Hades',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 41, label: 'União 7', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20},
+	{id: 42, label: 'Ares',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 43, label: 'Hefesto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 44, label: 'Atena',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 45, label: 'União 8', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20},
+	{id: 46, label: 'União 9', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20},
+	{id: 47, label: 'Hermes',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 48, label: 'Apolo',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 49, label: 'Artemes',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 },
+	{id: 50, label: 'Dionísio',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/none.svg', size: 30 }
+    
+  ]);
+
+
+  var edges = new vis.DataSet([
+    {from: 1, to: 2, length:250, color:{color:'#ffffff'}},
+    {from: 1, to: 3,length:250, color:{color:'#ffffff'}},
+    {from: 1, to: 4,length:250, color:{color:'#ffffff'}},
+    {from: 1, to: 5,length:250, color:{color:'#ffffff'}},
+    {from: 1, to: 6,length:250, color:{color:'#ffffff'}},
+	{from: 4, to: 10,length:250, color:{color:'#ffffff'}},
+	{from: 4, to: 11,length:250, color:{color:'#ffffff'}},
+	{from: 4, to: 12,length:250, color:{color:'#ffffff'}},
+	{from: 4, to: 14,length:250, color:{color:'#ffffff'}},
+	{from: 5, to: 7,length:250, color:{color:'#ffffff'}},
+	{from: 6, to: 7,length:250, color:{color:'#ffffff'}},
+	{from: 7, to: 8,length:250, color:{color:'#ffffff'}},
+	{from: 7, to: 9,length:250, color:{color:'#ffffff'}},
+	{from: 12, to: 13,length:250, color:{color:'#ffffff'}},
+	{from: 12, to: 14,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 15,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 16,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 17,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 18,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 19,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 20,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 21,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 22,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 23,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 24,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 25,length:250, color:{color:'#ffffff'}},
+	{from: 14, to: 26,length:250, color:{color:'#ffffff'}},
+	{from: 19, to: 27,length:250, color:{color:'#ffffff'}},
+	{from: 20, to: 27,length:250, color:{color:'#ffffff'}},
+	{from: 22, to: 28,length:250, color:{color:'#ffffff'}},
+	{from: 23, to: 29,length:250, color:{color:'#ffffff'}},
+	{from: 24, to: 29,length:250, color:{color:'#ffffff'}},
+	{from: 25, to: 34,length:250, color:{color:'#ffffff'}},
+	{from: 26, to: 34,length:250, color:{color:'#ffffff'}},
+	{from: 27, to: 32,length:250, color:{color:'#ffffff'}},
+	{from: 28, to: 31,length:250, color:{color:'#ffffff'}},
+	{from: 29, to: 30,length:250, color:{color:'#ffffff'}},
+	{from: 30, to: 31,length:250, color:{color:'#ffffff'}},
+	{from: 31, to: 33,length:250, color:{color:'#ffffff'}},
+	{from: 32, to: 45,length:250, color:{color:'#ffffff'}},
+	{from: 33, to: 46, color:{color:'#ffffff'}},
+	{from: 34, to: 35, color:{color:'#ffffff'}},
+	{from: 34, to: 36, color:{color:'#ffffff'}},
+	{from: 34, to: 37, color:{color:'#ffffff'}},
+	{from: 34, to: 38, color:{color:'#ffffff'}},
+	{from: 34, to: 39, color:{color:'#ffffff'}},
+	{from: 34, to: 40, color:{color:'#ffffff'}},
+	{from: 37, to: 41, color:{color:'#ffffff'}},
+	{from: 38, to: 41, color:{color:'#ffffff'}},
+	{from: 38, to: 44, color:{color:'#ffffff'}},
+	{from: 38, to: 45, color:{color:'#ffffff'}},
+	{from: 38, to: 46, color:{color:'#ffffff'}},
+	{from: 38, to: 50, color:{color:'#ffffff'}},
+	{from: 41, to: 42, color:{color:'#ffffff'}},
+	{from: 41, to: 43, color:{color:'#ffffff'}},
+	{from: 45, to: 48, color:{color:'#ffffff'}},
+	{from: 45, to: 49, color:{color:'#ffffff'}},
+	{from: 46, to: 47, color:{color:'#ffffff'}}
+	
+  ]);
+
+
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {};
+  var network = new vis.Network(container, data, options);
+  
+  function mudanca(id, selected, size){
+	size
+  }
+</script>
+
+
+</body>
+</html>
