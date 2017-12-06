@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Diogenes';
+    src: url('../font/Diogenes.eot');
+    src: url('../font/Diogenes.eot?#iefix') format('embedded-opentype'),
+        url('../font/Diogenes.woff2') format('woff2'),
+        url('../font/Diogenes.woff') format('woff'),
+        url('../font/Diogenes.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+  
+    #mynetwork {
+      margin: 0 auto;
+      width: 90vw;
+      height: 70vh;
+      border: 1px solid lightgray;
+	  font-family: Diogenes;
+    }
+	body{
+		  background: url("../bonito.png")  fixed center;	
+			  font-family: Diogenes;
+	}
+	h1{
+	text-align:center;
+	color:white;
+	font-size:48px;
+	}
+	p{
+		color:white;
+		padding:0 200px	;
+	}
