@@ -7,19 +7,33 @@
         url('../font/Diogenes.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-family: 'Matrix';
+    src: url('../font/Matrix-Bold.eot');
+    src: url('../font/Matrix-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/Matrix-Bold.woff') format('woff'),
+        url('../font/Matrix-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+
 }
   
   
     #mynetwork {
       margin: 0 auto;
       width: 90vw;
-      height: 70vh;
+      height: 80vh;
       border: 1px solid lightgray;
 	  font-family: Diogenes;
     }
+    #intro{
+    	font-family: Matrix;
+    }
+    #logo{
+    	height: 100px;
+    	width: 450px;
+    }
 	body{
 		  background: url("../bonito.png")  fixed center;	
-			  font-family: Diogenes;
 	}
 	h1{
 	text-align:center;
@@ -28,5 +42,5 @@
 	}
 	p{
 		color:white;
-		padding:0 200px	;
+		padding:0 150px	;
 	}
