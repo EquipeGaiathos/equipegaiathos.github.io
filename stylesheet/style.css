@@ -27,6 +27,8 @@
     }
     #intro{
     	font-family: Matrix;
+    	font-size: 18px;
+    	text-align: justify;
     }
     #logo{
     	height: 100px;
@@ -42,5 +44,5 @@
 	}
 	p{
 		color:white;
-		padding:0 150px	;
+		padding:0 175px	;
 	}

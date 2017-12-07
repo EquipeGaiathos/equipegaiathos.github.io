@@ -17,20 +17,16 @@
   </style>
 </head>
 <body>
+
 <header>
 <h1> <img id="logo" src="img/logo.png"> </h1>
-<p id="intro"> Bem vindo a constelação dos deuses! Aqui você poderá conhecer a cosmogonia das divindades gregas e entender um pouco mais de seus poderes e suas histórias.<br> 
-
-Você poderá desvendar essa constelação ao interagir com os nós, representados por ícones de seus respectivos deuses. Cada nó está vinculado a uma carta que é mostrada a partir do clique. São os Cosmocards, as cartas dos avatares divinos. <br>
-
-Esse trabalho foi desenvolvido dentro da disciplina de Projeto 1 do curso de Sistemas e Mídias Digitais. Tivemos como professores orientadores: Ernesto Trajano de Lima , Maria Fátima Costa de Souza, Vanessa Ester Silva Farias .<br>
-Nosso cliente foi o grupo de estudo PAIDEIA, representados por: Glaudiney Mendonça, A outra cliente ( perguntar ao geovane) que estuda mitologia, essa aplicação então surge com intuito de facilitar o estudo da cosmogonia e a consulta das relações entre as divindades. <br>
-
-Por final, Cosmocards foi desenvolvido pela equipe Gaiathos, que é constituída por: Pedro Peixoto, Felipe Rocha, Geovane Moura, Leonardo Santos e Bruno Sonsol </p> 
+<p id="intro"> Bem vindo a constelação dos deuses! Aqui você poderá conhecer a cosmogonia das divindades gregas e entender um pouco mais de seus poderes e suas histórias. Você poderá desvendar essa constelação ao interagir com os nós, representados por ícones de seus respectivos deuses. Cada nó está vinculado a uma carta que é mostrada a partir do clique. São os Cosmocards, as cartas dos avatares divinos. <br>
+<br>
+Esse trabalho foi desenvolvido dentro da disciplina de Projeto 1 do curso de Sistemas e Mídias Digitais. Tivemos como professores orientadores: Ernesto Trajano de Lima , Maria Fátima Costa de Souza, Vanessa Ester Silva Farias. Nosso cliente foi o grupo de estudo de mitologia Greco-Romana PAIDEIA, representados por: Glaudiney Mendonça e Danielle Motta, essa aplicação então surge com intuito de facilitar o estudo da cosmogonia e a consulta das relações entre as divindades. Por final, Cosmocards foi desenvolvido pela equipe Gaiathos, que é constituída por: Pedro Peixoto, Felipe Rocha, Geovane Moura, Leonardo Santos e Bruno Sonsol. </p> 
 </header>
 </br>
-
 <div id="mynetwork"></div>
+ <audio id="foobar" src="sound/fundo.mp3" preload="auto" style="display: none"> 
 
 <script type="text/javascript">
   // create an array with nodes
@@ -38,7 +34,7 @@ Por final, Cosmocards foi desenvolvido pela equipe Gaiathos, que é constituída
     {id: 1, label: 'Caos', shape: 'image', size: 80, font:{size: 30, color:'white', face: 'Diogenes'}, 
 	image:{ unselected:'img/chaos.svg', selected: 'deusgrego.png'}, },
 	{id: 2, label: 'Tártaro', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/tártaro.svg', selected: 'deusgrego.png'}      },
+	image:{ unselected:'img/tartaro.svg', selected: 'deusgrego.png'}      },
 	{id: 3, label: 'Eros', shape: 'image',size: 60,font:{size: 30, color:'white', face: 'Diogenes'},
 	image:{ unselected:'img/heros.svg', selected: 'deusgrego.png'}  	},
 	{id: 4, label: 'Gaia', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
@@ -46,7 +42,7 @@ Por final, Cosmocards foi desenvolvido pela equipe Gaiathos, que é constituída
 	{id: 5, label: 'Nix', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
 	image:{ unselected:'img/nix.svg', selected: 'nix.png'}  },
 	{id: 6, label: 'Érebo', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/érebo.svg', selected: 'erebo.png'}  },
+	image:{ unselected:'img/erebo.svg', selected: 'erebo.png'}  },
 	{id: 7, label: 'União ',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Nix e Erebo'},
 	{id: 8, label: 'Emera', shape: 'image',size: 40, font:{size: 30, color:'white', face: 'Diogenes'},
 	image:{ unselected:'img/hemera.svg', selected: 'deusgrego.png'}  },
@@ -217,7 +213,14 @@ Por final, Cosmocards foi desenvolvido pela equipe Gaiathos, que é constituída
 	}
   };
   var network = new vis.Network(container, data, options);
-  
+  var sample = document.getElementById("foobar");
+sample.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+}, false);
+sample.volume=0.3;
+
+sample.play();
   
 </script>
 
