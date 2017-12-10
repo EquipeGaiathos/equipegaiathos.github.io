@@ -32,95 +32,95 @@ Esse trabalho foi desenvolvido dentro da disciplina de Projeto 1 do curso de Sis
   // create an array with nodes
     var nodes = new vis.DataSet([
     {id: 1, label: 'Caos', shape: 'image', size: 80, font:{size: 30, color:'white', face: 'Diogenes'}, 
-	image:{ unselected:'img/chaos.svg', selected: 'deusgrego.png'}, },
+	image:{ unselected:'img/chaos.svg', selected: 'img/cartas/caos.png'}, },
 	{id: 2, label: 'Tártaro', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/tartaro.svg', selected: 'deusgrego.png'}      },
+	image:{ unselected:'img/tartaro.svg', selected: 'img/cartas/tartaro.svg'}      },
 	{id: 3, label: 'Eros', shape: 'image',size: 60,font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/heros.svg', selected: 'deusgrego.png'}  	},
+	image:{ unselected:'img/heros.svg', selected: 'img/cartas/eros.png'}  	},
 	{id: 4, label: 'Gaia', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/gaia.svg', selected: 'gaia.png'}  },
+	image:{ unselected:'img/gaia.svg', selected: 'img/cartas/gaia.png'}  },
 	{id: 5, label: 'Nix', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/nix.svg', selected: 'nix.png'}  },
+	image:{ unselected:'img/nix.svg', selected: 'img/cartas/nix.png'}  },
 	{id: 6, label: 'Érebo', shape: 'image',size: 60, font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/erebo.svg', selected: 'erebo.png'}  },
+	image:{ unselected:'img/erebo.svg', selected: 'img/cartas/erebo.png'}  },
 	{id: 7, label: 'União ',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Nix e Erebo'},
 	{id: 8, label: 'Emera', shape: 'image',size: 40, font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/hemera.svg', selected: 'deusgrego.png'}  },
+	image:{ unselected:'img/hemera.svg', selected: 'img/cartas/hemera.png'}  },
 	{id: 9, label: 'Éter', shape: 'image', size: 40,font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/eter.svg', selected: 'deusgrego.png'}  },
-	{id: 10, label: 'Pontos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Pontos.svg', size: 50  },
+	image:{ unselected:'img/eter.svg', selected: 'img/cartas/eter.png'}  },
+	{id: 10, label: 'Pontos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',size: 50, image:{ unselected:'img/Pontos.svg', selected: 'img/cartas/pontos.svg'}  },
 	{id: 11, label: 'Orea', shape: 'image',size: 50,font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/orea.svg', selected: 'deusgrego.png'}  },
+	image:{ unselected:'img/orea.svg', selected: 'img/cartas/oreas.svg'}  },
 	{id: 12, label: 'Uranos', shape: 'image',size: 50, font:{size: 30, color:'white', face: 'Diogenes'},
-	image:{ unselected:'img/urano.svg', selected: 'deusgrego.png'}  },
-	{id: 13, label: 'Afrodite',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Afrodite.svg', size: 35
-	,image:{ unselected:'img/Afrodite.svg', selected: 'deusgrego.png'}},
+	image:{ unselected:'img/urano.svg', selected: 'img/cartas/uranos.svg'}  },
+	{id: 13, label: 'Afrodite',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 35
+	,image:{ unselected:'img/Afrodite.svg', selected: 'img/cartas/afrodite.svg'}},
 	{id: 14, label: 'União ', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Gaia e Uranos'},
-	{id: 15, label: 'Mnemosine',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/mnemonozine.svg', size: 35 
-	,image:{ unselected:'img/mnemonozine.svg', selected: 'deusgrego.png'}},
-	{id: 16, label: 'Hiperion',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/hiperion.svg', size: 35 
-	,image:{ unselected:'img/hiperion.svg', selected: 'deusgrego.png'}},
-	{id: 17, label: 'Teia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/theia.svg', size: 35 
-	,image:{ unselected:'img/theia.svg', selected: 'deusgrego.png'}},
-	{id: 18, label: 'Crio',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/crio.svg', size: 35 
-	,image:{ unselected:'img/crio.svg', selected: 'deusgrego.png'}},
-	{id: 19, label: 'Febe',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/febe.svg', size: 35
-	,image:{ unselected:'img/febe.svg', selected: 'deusgrego.png'}},
-	{id: 20, label: 'Ceos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/céos.svg', size: 35
-	,image:{ unselected:'img/céos.svg', selected: 'deusgrego.png'}},
-	{id: 21, label: 'Temis',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/themis.svg', size: 35
-	,image:{ unselected:'img/themis.svg', selected: 'deusgrego.png'}},
-	{id: 22, label: 'Jápeto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/japeto.svg', size: 35
-	,image:{ unselected:'img/japeto.svg', selected: 'deusgrego.png'}},
-	{id: 23, label: 'Tetis',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/tetis.svg', size: 35
-	,image:{ unselected:'img/tetis.svg', selected: 'deusgrego.png'}},
-	{id: 24, label: 'Oceanos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/oceanos.svg', size: 35
-	,image:{ unselected:'img/oceanos.svg', selected: 'deusgrego.png'}},
-	{id: 25, label: 'Reia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/reia.svg', size: 35
-	,image:{ unselected:'img/reia.svg', selected: 'deusgrego.png'}},
-	{id: 26, label: 'Cronos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/cronos.svg', size: 35
-	,image:{ unselected:'img/cronos.svg', selected: 'deusgrego.png'}},
+	{id: 15, label: 'Mnemosine',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 35 
+	,image:{ unselected:'img/mnemonozine.svg', selected: 'img/cartas/mnemosine.svg'}},
+	{id: 16, label: 'Hiperion',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 35 
+	,image:{ unselected:'img/hiperion.svg', selected: 'img/cartas/hyperion.svg'}},
+	{id: 17, label: 'Teia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 35 
+	,image:{ unselected:'img/theia.svg', selected: 'img/cartas/teia.svg'}},
+	{id: 18, label: 'Crio',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 35 
+	,image:{ unselected:'img/crio.svg', selected: 'img/cartas/crio.svg'}},
+	{id: 19, label: 'Febe',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 35
+	,image:{ unselected:'img/febe.svg', selected: 'img/cartas/febe.svg'}},
+	{id: 20, label: 'Ceos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 35
+	,image:{ unselected:'img/céos.svg', selected: 'img/cartas/ceos.svg'}},
+	{id: 21, label: 'Temis',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 35
+	,image:{ unselected:'img/themis.svg', selected: 'img/cartas/temis.svg'}},
+	{id: 22, label: 'Jápeto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 35
+	,image:{ unselected:'img/japeto.svg', selected: 'img/cartas/japeto.svg'}},
+	{id: 23, label: 'Tetis',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 35
+	,image:{ unselected:'img/tetis.svg', selected: 'img/cartas/tetis.svg'}},
+	{id: 24, label: 'Oceanos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 35
+	,image:{ unselected:'img/oceanos.svg', selected:'img/cartas/oceanos.svg'}},
+	{id: 25, label: 'Reia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 35
+	,image:{ unselected:'img/reia.svg', selected: 'img/cartas/reia.svg'}},
+	{id: 26, label: 'Cronos',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 35
+	,image:{ unselected:'img/cronos.svg', selected: 'img/cartas/cronos.svg'}},
 	{id: 27, label: 'União ',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20 ,title:'Ceos de Nix e Febe'},
-	{id: 28, label: 'Atlas',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Atlas.svg', size: 30 
-	,image:{ unselected:'img/Atlas.svg', selected: 'deusgrego.png'}},
+	{id: 28, label: 'Atlas',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 30 
+	,image:{ unselected:'img/Atlas.svg', selected: 'img/cartas/atlas.svg'}},
 	{id: 29, label: 'União ', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Tetis e Oceanos'},
-	{id: 30, label: 'Pleone',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Pleione_1.svg', size: 30 
-	,image:{ unselected:'img/Pleione_1.svg', selected: 'deusgrego.png'}},
+	{id: 30, label: 'Pleone',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 30 
+	,image:{ unselected:'img/Pleione_1.svg', selected: 'img/cartas/pleione.svg'}},
 	{id: 31, label: 'União ', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Atlas e Pleone'},
-	{id: 32, label: 'Leto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Leto.svg', size: 30 
-	,image:{ unselected:'img/Leto.svg', selected: 'deusgrego.png'}},
-	{id: 33, label: 'Maia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Maia.svg', size: 25
-	,image:{ unselected:'img/Maia.svg', selected: 'deusgrego.png'}},
+	{id: 32, label: 'Leto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 30 
+	,image:{ unselected:'img/Leto.svg', selected: 'img/cartas/leto.svg'}},
+	{id: 33, label: 'Maia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 25
+	,image:{ unselected:'img/Maia.svg', selected: 'img/cartas/maia.svg'}},
 	{id: 34, label: 'União ', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Cronos e Reia'},
-	{id: 35, label: 'Hestia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Hestia.svg', size: 30 
-	,image:{ unselected:'img/Hestia.svg', selected: 'deusgrego.png'}},
-	{id: 36, label: 'Demeter',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Demeter.svg', size: 30 
-	,image:{ unselected:'img/Demeter.svg', selected: 'deusgrego.png'}},
-	{id: 37, label: 'Hera',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Hera.svg', size: 30 
-	,image:{ unselected:'img/Hera.svg', selected: 'deusgrego.png'}},
-	{id: 38, label: 'Zeus',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Zeus.svg', size: 30 
-	,image:{ unselected:'img/Zeus.svg', selected: 'deusgrego.png'}},
-	{id: 39, label: 'Poseidon',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/poseidon.svg', size: 30 
-	,image:{ unselected:'img/poseidon.svg', selected: 'deusgrego.png'}},
-	{id: 40, label: 'Hades',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/hades.svg', size: 30 
-	,image:{ unselected:'img/hades.svg', selected: 'deusgrego.png'}},
+	{id: 35, label: 'Hestia',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 30 
+	,image:{ unselected:'img/Hestia.svg', selected: 'img/cartas/hestia.svg'}},
+	{id: 36, label: 'Demeter',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 30 
+	,image:{ unselected:'img/Demeter.svg', selected: 'img/cartas/demeter.svg'}},
+	{id: 37, label: 'Hera',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 30 
+	,image:{ unselected:'img/Hera.svg', selected: 'img/cartas/hera.svg'}},
+	{id: 38, label: 'Zeus',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 30 
+	,image:{ unselected:'img/Zeus.svg', selected: 'img/cartas/zeus.svg'}},
+	{id: 39, label: 'Poseidon',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 30 
+	,image:{ unselected:'img/poseidon.svg', selected:'img/cartas/poseidon.svg'}},
+	{id: 40, label: 'Hades',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 30 
+	,image:{ unselected:'img/hades.svg', selected: 'img/cartas/hades.svg'}},
 	{id: 41, label: 'União ', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Zeus e Hera'},
-	{id: 42, label: 'Ares',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Ares.svg', size: 25
-	,image:{ unselected:'img/Ares.svg', selected: 'deusgrego.png'}},
-	{id: 43, label: 'Hefesto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Hefesto.svg', size: 25 
-	,image:{ unselected:'img/Hefesto.svg', selected: 'deusgrego.png'}},
-	{id: 44, label: 'Atena',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Atenas.svg', size: 25
-	,image:{ unselected:'img/Atenas.svg', selected: 'deusgrego.png'}},
+	{id: 42, label: 'Ares',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 25
+	,image:{ unselected:'img/Ares.svg', selected: 'img/cartas/ares.svg'}},
+	{id: 43, label: 'Hefesto',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 25 
+	,image:{ unselected:'img/Hefesto.svg', selected: 'img/cartas/hefesto.svg'}},
+	{id: 44, label: 'Atena',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 25
+	,image:{ unselected:'img/Atenas.svg', selected: 'img/cartas/atena.svg'}},
 	{id: 45, label: 'União ', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Hera e Zeus'},
 	{id: 46, label: 'União ', font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/relacao.svg', size: 20,title:'União de Maia e Zeus'},
-	{id: 47, label: 'Hermes',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Hermes.svg', size: 20 
-	,image:{ unselected:'img/Hermes.svg', selected: 'deusgrego.png'}},
-	{id: 48, label: 'Apolo',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/apolo.svg', size: 25 
-	,image:{ unselected:'img/apolo.svg', selected: 'deusgrego.png'}},
-	{id: 49, label: 'Artemis',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Artemis.svg', size: 25
-	,image:{ unselected:'img/Artemis.svg', selected: 'deusgrego.png'}},
-	{id: 50, label: 'Dionísio',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', image: 'img/Dionisio.svg', size: 25 
-	,image:{ unselected:'img/Dionisio.svg', selected: 'deusgrego.png'}}
+	{id: 47, label: 'Hermes',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 20 
+	,image:{ unselected:'img/Hermes.svg', selected: 'img/cartas/hermes.svg'}},
+	{id: 48, label: 'Apolo',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 25 
+	,image:{ unselected:'img/apolo.svg', selected: 'img/cartas/apolo.svg'}},
+	{id: 49, label: 'Artemis',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image',  size: 25
+	,image:{ unselected:'img/Artemis.svg', selected: 'img/cartas/artemis.svg'}},
+	{id: 50, label: 'Dionísio',font:{size: 20, color:'white', face: 'diogenes'}, shape: 'image', size: 25 
+	,image:{ unselected:'img/Dionisio.svg', selected: 'img/cartas/dionisio.svg'}}
     
   ]);
 
